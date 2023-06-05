@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 200
-  Top = 182
+  Left = 231
+  Top = 148
   Width = 708
   Height = 535
   Caption = 'Form1'
@@ -11,14 +11,16 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
     Left = 40
     Top = 16
-    Width = 107
+    Width = 120
     Height = 18
-    Caption = 'Nama Kustomer'
+    Caption = 'Nama Kustomer *'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
@@ -234,6 +236,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 10
+    OnClick = btn5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
